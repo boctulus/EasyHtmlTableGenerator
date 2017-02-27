@@ -23,7 +23,39 @@ Or can use addRow() for each register like this:
 	$table->addRow(['name'=>'Pepito','lastname'=>'Ferandez','edad'=>21]);  
 	$table->addRow(['name'=>'Fulano','lastname'=>'Jimenez','edad'=>21]);   	
 
+	
+It's easy to add an 'id' for each TR so you can handle this with Javascript, it's just add a new field into the array passed to addRow() or setRows() methods:
 
+
+	$tabla->addRow(['name'=>'John','lastname'=>'Doe','age'=>35,'id'=>8]);	
+
+	
+Will be renderized like:
+
+
+	<tr id="8">
+		<td>John</td>
+		<td>Doe</td>
+		<td>35</td>
+	</tr>
+
+
+And it's also possible to add attributes like style or data- or whatever like an event handler (onClick, onHover,..) to <table>, <th> and <tr> 
+
+	$table = new HtmlTable('table' ,'style="display:none;"'); 
+	
+	Or 
+	
+	$table->setHead('th_blue',['name','lastname','age',''] ,
+					['name'=>'style="display:none;"',
+					'lastname'=>NULL,'age'=>NULL,''=>NULL] 
+					); 
+					
+	Or
+
+	$table->addRow(['name'=>'Ann', 'lastname'=>'White', 'age'=>23, 'id'=>100, 'attr'=>['data-xxx'=>'some value'] ]); 	
+
+	
 A functional example of use:
 	
 
