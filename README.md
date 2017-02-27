@@ -3,7 +3,7 @@
 For example:
 
 
-		<?php  
+	<?php  
         require_once("HtmlTable.php");
     
         $table = new HtmlTable('table');
@@ -40,7 +40,7 @@ Will be renderized like:
 	</tr>
 
 
-And it's also possible to add attributes like style or data- or whatever like an event handler (onClick, onHover,..) to <table>, <th> and <tr> 
+And it's also possible to add attributes like style or data- or whatever like an event handler (onClick, onHover,..) to < table >, < th > and < tr >  
 
 	$table = new HtmlTable('table' ,'style="display:none;"'); 
 	
