@@ -9,7 +9,7 @@ For example:
         $table = new HtmlTable('table');
         $table->setHead('th_blue',['name','lastname','age']);        
         $table->setRows([['name'=>'John','lastname'=>'Doe','age'=>35],
-                         ['name'=>'Ann','lastname'=>'White','age'=>23],                         ['name'=>'Pablo','lastname'=>'Bozzolo','age'=>41]]);                
+                         ['name'=>'Ann','lastname'=>'White','age'=>23],                         	                                                          ['name'=>'Pablo','lastname'=>'Bozzolo','age'=>41]]);                
                         
         // optional
         $table->setRowClases(['info','','warning']);       
