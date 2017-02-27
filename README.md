@@ -27,7 +27,7 @@ Or can use addRow() for each register like this:
 It's easy to add an 'id' for each TR so you can handle this with Javascript, it's just add a new field into the array passed to addRow() or setRows() methods:
 
 
-	$tabla->addRow(['name'=>'John','lastname'=>'Doe','age'=>35,'id'=>8]);	
+	$table->addRow(['name'=>'John','lastname'=>'Doe','age'=>35,'id'=>8]);	
 
 	
 Will be renderized like:
