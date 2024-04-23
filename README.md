@@ -20,8 +20,8 @@ For example:
 Or can use addRow() for each register like this:
 
 
-	$table->addRow(['name'=>'Pepito','lastname'=>'Ferandez','edad'=>21]);  
-	$table->addRow(['name'=>'Fulano','lastname'=>'Jimenez','edad'=>21]);   	
+	$table->addRow(['name'=>'Pepito','lastname'=>'Ferandez','age'=>21]);  
+	$table->addRow(['name'=>'Fulano','lastname'=>'Jimenez','age'=>21]);   	
 
 	
 It's easy to add an 'id' for each TR so you can handle this with Javascript, it's just add a new field into the array passed to addRow() or setRows() methods:
